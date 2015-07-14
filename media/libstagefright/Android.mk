@@ -147,7 +147,7 @@ LOCAL_STATIC_LIBRARIES := \
         libmedia_helper
 
 ifeq ($(TARGET_USES_QCOM_BSP), true)
-    LOCAL_C_INCLUDES += hardware/qcom/display/libgralloc
+    LOCAL_C_INCLUDES += hardware/qcom/display/$(TARGET_BOARD_PLATFORM)/libgralloc
     LOCAL_CFLAGS += -DQCOM_BSP
 endif
 
